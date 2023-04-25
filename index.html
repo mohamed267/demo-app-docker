@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function editProfile(){
+    document.querySelector(".container").style.display = "none"
+    document.querySelector(".container-edit").style.display = "block"
+    const name  = document.querySelector("#name").textContent
+    document.querySelector("#input-name").value = name
+    
+    const email  = document.querySelector("#email").textContent
+    document.querySelector("#input-email").value = email
+
+    
+    const interrests  = document.querySelector("#interrests").textContent
+    document.querySelector("#input-interrests").value = interrests
+}
+
+function saveProfile(){
+    const name  = document.querySelector("#name").textContent
+    document.querySelector("#input-name").value = name
+    
+    const email  = document.querySelector("#email").textContent
+    document.querySelector("#input-email").value = email
+
+    
+    const interrests  = document.querySelector("#interrests").textContent
+    document.querySelector("#input-interrests").value = interrests
+
+    
+    document.querySelector(".container").style.display = "block"
+    document.querySelector(".container-edit").style.display = "none"
+}
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="header">User profile</h1>
+        <img src="profile-picture" alt="" srcset="">
+        Name  <h3 id="email">Anna Smith</h3>
+        <hr />
+        Email  <h3 id="email">anna@email.com</h3>
+        <hr />
+        interrests  <h3 id="interrests">Conding</h3>
+        <hr />
+        <button class="button"  onclick="editProfile()" >Edit Profile</button>
+    </div>
+
+    <div class="container-edit">
+        <h1 id="header">User profile</h1>
+        <img src="profile-picture" alt="" srcset="">
+        Name  <h3 id="input-name">Anna Smith</h3>
+        <hr />
+        Email  <h3 id="input-email">anna@email.com</h3>
+        <hr />
+        interrests  <h3 id="input-interrests">Conding</h3>
+        <hr />
+        <button class="button"  onclick="saveProfile()" >Save Profile</button>
+    </div>
+    
+</body>
+</html>
