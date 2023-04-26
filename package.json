@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "start": "node server.js --watch"
+    "start": "node server.js --watch",
+    "compose:up": "docker-compose -f mongo.yaml up",
+    
+    "compose:down": "docker-compose -f mongo.yaml down"
   },
   "dependencies": {
     "express": "^4.18.2",
